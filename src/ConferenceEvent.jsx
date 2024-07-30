@@ -159,10 +159,10 @@ const ConferenceEvent = () => {
                         <a href="#venue" onClick={() => navigateToProducts("#venue")} >Venue</a>
                         <a href="#addons" onClick={() => navigateToProducts('#addons')}>Add-ons</a>
                         <a href="#meals" onClick={() => navigateToProducts('#meals')}>Meals</a>
-                    </div>
-                    <button className="details_button" onClick={() => setShowItems(!showItems)}>
+                        <button className="details_button" onClick={() => setShowItems(!showItems)}>
                         Show Details
-                    </button>
+                      </button>
+                    </div>
                 </div>
             </div>
             <div className="main_container">
@@ -304,6 +304,9 @@ const ConferenceEvent = () => {
 
 
             </div>
+            <div style={{textAlign: "center"}}><button className="details_button" onClick={() => setShowItems(!showItems)}>
+                        Show Details
+                      </button></div><br />
         </>
 
     );
